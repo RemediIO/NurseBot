@@ -1,0 +1,1 @@
+clear && npm run local

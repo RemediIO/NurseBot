@@ -1,0 +1,27 @@
+{
+  "name": "nursebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "local": "node app-local.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RemediIO/NurseBot.git"
+  },
+  "author": "orie@or13.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RemediIO/NurseBot/issues"
+  },
+  "homepage": "https://github.com/RemediIO/NurseBot#readme",
+  "dependencies": {
+    "botbuilder": "^0.9.1",
+    "lodash": "^4.6.1",
+    "lodash-math": "0.0.7",
+    "request": "^2.69.0",
+    "restify": "^4.0.4",
+    "typings": "^0.6.10"
+  }
+}
