@@ -245,7 +245,7 @@ function addDemo(isCommandMode, dialog, fbRef) {
             }
         ]);
     }
-    var helpCommands = "\n    \n    I'm sorry. Here's what you can ask me: \n\n    \n    SetPatientId \n\n    GetPatientVitals \n\n    GetPatientEncounterOrders \n\n \n    UpdatePatientTemperature \n\n    UpdatePatientPulse \n\n    \n    SearchPracticePrescriptions \n\n    \n    ";
+    var helpCommands = "\n    \n    I'm sorry. Here's what you can ask me: \n\n    \n    SetPatientId : \"set patient id to 5\" or \"patient id 1\"\n\n    GetPatientVitals : \"get vitals\" or \"what are vitals?\"\n\n    GetPatientEncounterOrders : \"get orders\" or \"any orders\"\n\n \n    UpdatePatientTemperature : \"update temperature 105\" or \"set temp 101\"\n\n    UpdatePatientPulse : \"update pulse 120\" or \"set pulse 70\"\n\n    \n    SearchPracticePrescriptions : \"search diabetes\" \n\n    \n    ";
     dialog.onDefault(builder.DialogAction.send(helpCommands));
     return dialog;
 }

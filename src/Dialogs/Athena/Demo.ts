@@ -262,14 +262,14 @@ export function addDemo(isCommandMode: boolean, dialog: any, fbRef: any) {
     
     I'm sorry. Here's what you can ask me: \n
     
-    SetPatientId \n
-    GetPatientVitals \n
-    GetPatientEncounterOrders \n
+    SetPatientId : "set patient id to 5" or "patient id 1"\n
+    GetPatientVitals : "get vitals" or "what are vitals?"\n
+    GetPatientEncounterOrders : "get orders" or "any orders"\n
  
-    UpdatePatientTemperature \n
-    UpdatePatientPulse \n
+    UpdatePatientTemperature : "update temperature 105" or "set temp 101"\n
+    UpdatePatientPulse : "update pulse 120" or "set pulse 70"\n
     
-    SearchPracticePrescriptions \n
+    SearchPracticePrescriptions : "search diabetes" \n
     
     `;
 
