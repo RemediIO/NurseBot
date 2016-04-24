@@ -28,7 +28,7 @@ var NurseBot = (function (_super) {
         this.LUIS_KEY = process.env.LUIS_KEY;
         this.LUIS_MODEL = "https://api.projectoxford.ai/luis/v1/application?id=" + this.LUIS_ID + "&subscription-key=" + this.LUIS_KEY + "&q=";
         this.fbRef = new Firebase("" + this.FIREBASE_APP_URL);
-        this.isCommandMode = true;
+        this.isCommandMode = false;
         this.add('/', Demo_1.addDemo(this.isCommandMode, this.getNewDialog(), this.fbRef));
     }
     return NurseBot;

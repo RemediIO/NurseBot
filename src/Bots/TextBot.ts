@@ -32,7 +32,7 @@ export class NurseBot extends builder.TextBot {
 
         this.fbRef = new Firebase(`${this.FIREBASE_APP_URL}`);
 
-        this.isCommandMode = true;
+        this.isCommandMode = false;
 
         this.add('/', addDemo(this.isCommandMode, this.getNewDialog(), this.fbRef))
 
@@ -42,6 +42,7 @@ export class NurseBot extends builder.TextBot {
         if (this.isCommandMode) {
             return new builder.CommandDialog();
         } else {
+            console.log('loading: ', this.LUIS_MODEL);
             return new builder.LuisDialog(this.LUIS_MODEL);
         }
     }
