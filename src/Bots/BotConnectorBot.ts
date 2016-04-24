@@ -1,7 +1,7 @@
 import builder = require('botbuilder');
 import Firebase = require("firebase");
 
-import { addSetPatientId } from '../Dialogs/Athena/SetPatientId'
+import { addDemo } from '../Dialogs/Athena/Demo'
 
 declare var process: any;
 
@@ -36,9 +36,9 @@ export class NurseBot extends builder.BotConnectorBot {
 
         this.fbRef = new Firebase(`${this.FIREBASE_APP_URL}`);
 
-        this.isCommandMode = true;
+        this.isCommandMode = false;
 
-        this.add('/', addSetPatientId(this.isCommandMode, this.getNewDialog(), this.fbRef))
+        this.add('/', addDemo(this.isCommandMode, this.getNewDialog(), this.fbRef))
 
     }
 

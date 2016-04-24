@@ -9,7 +9,7 @@ var server = restify.createServer();
 
 server.get('/', (req, res, next) => {
   res.send({
-    nurse: "remedi"
+    nurse: "remedi almost"
   });
   next();
 });

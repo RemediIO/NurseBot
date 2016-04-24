@@ -48,7 +48,7 @@ export function addSetPatientId(isCommandMode: boolean, dialog: any, fbRef: any)
             }
         ]);
     }
-    dialog.onDefault(builder.DialogAction.send("I'm sorry Dave, I can't do that right now. ;)"));
+    
     
     return dialog;
 
