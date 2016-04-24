@@ -9,7 +9,8 @@ var server = restify.createServer();
 
 server.get('/', (req, res, next) => {
   res.send({
-    nurse: "remedi is live!"
+    nurse: "remedi is live!",
+    isCommandMode: nursebot.isCommandMode
   });
   next();
 });
