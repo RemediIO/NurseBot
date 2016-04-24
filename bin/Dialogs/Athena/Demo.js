@@ -245,7 +245,8 @@ function addDemo(isCommandMode, dialog, fbRef) {
             }
         ]);
     }
-    dialog.onDefault(builder.DialogAction.send("I'm sorry. Here's what you can ask me: "));
+    var helpCommands = "\n    \n    I'm sorry. Here's what you can ask me: \n\n    \n    SetPatientId \n\n    GetPatientVitals \n\n    GetPatientEncounterOrders \n\n \n    UpdatePatientTemperature \n\n    UpdatePatientPulse \n\n    \n    SearchPracticePrescriptions \n\n    \n    ";
+    dialog.onDefault(builder.DialogAction.send(helpCommands));
     return dialog;
 }
 exports.addDemo = addDemo;

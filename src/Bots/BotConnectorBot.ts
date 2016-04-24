@@ -36,7 +36,7 @@ export class NurseBot extends builder.BotConnectorBot {
 
         this.fbRef = new Firebase(`${this.FIREBASE_APP_URL}`);
 
-        this.isCommandMode = false;
+        this.isCommandMode = true;
 
         this.add('/', addDemo(this.isCommandMode, this.getNewDialog(), this.fbRef))
 

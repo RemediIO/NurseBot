@@ -258,8 +258,22 @@ export function addDemo(isCommandMode: boolean, dialog: any, fbRef: any) {
     }
 
 
+    var helpCommands = `
+    
+    I'm sorry. Here's what you can ask me: \n
+    
+    SetPatientId \n
+    GetPatientVitals \n
+    GetPatientEncounterOrders \n
+ 
+    UpdatePatientTemperature \n
+    UpdatePatientPulse \n
+    
+    SearchPracticePrescriptions \n
+    
+    `;
 
-    dialog.onDefault(builder.DialogAction.send("I'm sorry. Here's what you can ask me: "));
+    dialog.onDefault(builder.DialogAction.send( helpCommands ));
 
     return dialog;
 
