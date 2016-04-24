@@ -2,17 +2,14 @@
 var restify = require('restify');
 
 var cb = require('./bin/Bots/BotConnectorBot')
-var bs = require('./bin/Dialogs/Bootstrap')
 
 var nursebot = new cb.NurseBot();
-
-bs.bootstrapDialogs(nursebot);
 
 var server = restify.createServer();
 
 server.get('/', (req, res, next) => {
   res.send({
-    hello: "world"
+    nurse: "remedi"
   });
   next();
 });

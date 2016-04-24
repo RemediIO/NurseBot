@@ -18,8 +18,10 @@
   "homepage": "https://github.com/RemediIO/NurseBot#readme",
   "dependencies": {
     "botbuilder": "^0.9.1",
+    "firebase": "^2.4.2",
     "lodash": "^4.6.1",
     "lodash-math": "0.0.7",
+    "promise": "^7.1.1",
     "request": "^2.69.0",
     "restify": "^4.0.4",
     "typings": "^0.6.10"

@@ -4,6 +4,7 @@
   "devDependencies": {},
   "ambientDependencies": {
     "bunyan": "registry:dt/bunyan#0.0.0+20160412155112",
+    "firebase": "registry:dt/firebase#2.4.1+20160412125105",
     "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash-3.10.d.ts#86dbea8fc37d9473fee465da4f0a21bea4f8cbd9",
     "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#263705d313346e093d95cb62cef6fed848e46978",
     "restify": "registry:dt/restify#2.0.0+20160316155526"
